@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>FOR ALL THE DAWGS</title>
+    </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <a href="#" id="logo"><img src="img/dog-1602258.png" alt="Hundelogo"></a>
+                <div>
+                    <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                    <i id="list" class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="navbar">
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">MEN</a></li>
+                 <li><a href="#">KIDS</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h1>FOR ALL THE DAWGS</h1>
+            </section>
+            <section id="soek">
+                <form>
+                    <input type="text" id="text">
+                    <input type="submit" value="SEARCH">
+                </form>
+            </section>
+        </header>
+        </div>
+        <main>
+            <section id="account">
+                <h2>MY ACCOUNT</h2>
+                <article>
+                    <a href="#">PROFILE</a>
+                    <p>MANAGE INFORMATION, YOUR ADDRESS, PASSWORD, AND MORE</p>
+                </article>
+                <article>
+                    <a href="#">BARKS</a>
+                    <p>YOUR WISHLIST, YOUR MEMBERSHIP POINTS, AND MORE </p>
+                </article>
+                <article>
+                    <a href="#">PAYMENT</a>
+                    <p>MANAGE PAYMENT METHODS</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div id="fatd">
+                FOR ALL THE DAWGS 2023 ©
+            </div>
+        </footer>
+        <script>
+
+            let x = document.querySelector(".navbar")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+                })
+
+        </script>
+    </body>
+
+</html>
+
+
+<!-- Logoen av hunden er hentet fra plugin-en «Icon Scout» i Figma:
+https://iconscout.com/icon/dog-1602258?utm_campaign=2.5.0&utm_medium=figma&utm_source=iconscout-plugin -->

@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header, main, footer{
+    padding: 1rem;
+}
+
+header{
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-area: header;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav div{
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+#navn{
+    padding: 1rem;
+}
+
+.navbar{
+    display: none;
+    padding: 1rem;
+}
+
+.responsive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.responsive a{
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+#soek{
+    background-color:#232a52;
+    padding: 1rem;
+    text-align:center;
+}
+
+#soek form label, #soek form input{
+    display: block;
+    margin: 0 auto;
+}
+
+.blue-btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #264a62;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+main{
+    grid-area: main;
+}
+
+main section img{
+    width: 100%;
+}
+
+footer{
+    grid-area: footer;
+}
+
+#new h2{
+    width: 100%;
+}
+
+#new article{
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+}
+
+#account h2{
+    width: 100%;
+}
+
+#account article{
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+}
+
+#fatd {
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+}
+
+.meny{
+    display: block;
+}
+
+@media only screen and (min-width: 600px){
+    #grid-container{
+        grid-template-areas: "header header header" ". main ." "footer footer footer" ;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+
+
+    .flex-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-section img{
+        width: 50%;
+    }
+
+    .flex-section section{
+        padding: 1rem;
+        width: 40%;
+        align-self: center;
+    }
+
+    .right img{
+        order: 1;
+    }
+}

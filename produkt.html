@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>FOR ALL THE DAWGS</title>
+    </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <a href="#" id="logo"><img src="img/dog-1602258.png" alt="Hundelogo"></a>
+                <div>
+                    <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                    <i id="list" class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="navbar">
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">MEN</a></li>
+                 <li><a href="#">KIDS</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h1>FOR ALL THE DAWGS</h1>
+            </section>
+            <section id="soek">
+                <form>
+                    <input type="text" id="text">
+                    <input type="submit" value="SEARCH">
+                </form>
+            </section>
+        </header>
+        <main>
+            <div class="flex-section">
+                <img src="img/rosasko.jpeg" alt="Women">
+                <div>
+                    <h2>FOAMERS 2.0 WOMENS</h2>
+                    <p>THESE LIGHTWEIGHT SNEAKERS WILL MAKE YOU FEEL LIKE YOU’RE WALKING
+                        ON AIR. THE SOLE IS FILLED WITH OUR UNIQUE FOAM THAT YOUR FEET WILL
+                        LOVE. PERFECT FOR BOTH RUNNING AND DAILY USE.</p>
+                    </div>
+                </div>
+            <div class="flex-section right">
+                <img src="img/svartsko.jpeg" alt="Men">
+                <div>
+                    <h2>FOAMERS 2.0 MENS</h2>
+                    <p>THESE LIGHTWEIGHT SNEAKERS WILL MAKE YOU FEEL LIKE YOU’RE WALKING
+                        ON AIR. THE SOLE IS FILLED WITH OUR UNIQUE FOAM THAT YOUR FEET WILL
+                        LOVE. PERFECT FOR BOTH RUNNING AND DAILY USE.</p>
+                    </div>
+                </div>
+            <div>
+                <article>
+                    <h2>Price</h2>
+                    <p>499,-</p>
+                    <a href="#" class="blue-btn">Add to cart</a>
+                </article>
+            </div>
+        </main>
+        <footer>
+            FOR ALL THE DAWGS 2023 ©
+        </footer>
+        </div>
+        <script>
+
+            let x = document.querySelector(".navbar")
+
+            document.getElementById("search").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+                })
+
+        </script>
+    </body>
+
+</html>
+
+<!-- KILDER:
+Gratis stockbilder av sko, hentet fra iStockPhoto:
+https://media.istockphoto.com/id/1337191336/photo/black-fashion-sport-shoe-on-white-background.jpg?s=612x612&w=0&k=20&c=7Z8JNZ-nDPpDMHC7olOXrQm6uT3fG9Ya3h8uh_hpVbw=
+https://media.istockphoto.com/id/1467577722/photo/pink-sport-shoes-or-sneakers.jpg?s=612x612&w=0&k=20&c=kJm6MoOy0_y80cxg9WBjR-tFrq-7cae_o1diElS5fJc=
+(Fotografer og opprettelsesdato ikke funnet)
+
+Logoen av hunden er hentet fra plugin-en «Icon Scout» i Figma:
+https://iconscout.com/icon/dog-1602258?utm_campaign=2.5.0&utm_medium=figma&utm_source=iconscout-plugin -->
